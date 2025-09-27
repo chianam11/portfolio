@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+background: #19183B;
+height: 100%;
+}
+.main{
+  padding: 1.5rem 3rem;
+  color: white;
+}
+.scrollable {
+  overflow-y: scroll; /* hoặc auto */
+  
+  /* Firefox */
+  scrollbar-width: none; 
+  
+  /* Chrome, Safari, Edge */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
